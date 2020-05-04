@@ -1,0 +1,69 @@
+@import "style.css";
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+li{
+    padding-bottom: 10px;
+}
+#tag{
+    border: 2px solid #70A07E;
+    background-color: #70A07E;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 03.fr;
+    grid-template-areas:
+    "header header"
+    "sidebar article"
+    "footer footer";
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    background-color: #FFF;
+}
+article{
+    grid-column: 2/4;
+    grid-row: 2/4;
+
+}
+article img{
+    max-height: 350px;
+    max-width: 100%;
+}
+.about{
+    grid-column: 2/4;
+    grid-row: 5/6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly; 
+}
+.about h1{
+    order: 1;
+    padding-right: 5px;
+}
+.about p{
+    padding: 20px 5px 5px 10px;
+    order: 2;
+}
+.about img{
+    order: 3;
+    border: 0px solid #70A07E;
+    border-radius: 50%;
+}
+blockquote{
+    font-style: italic;
+    font-size: 1.5em;
+}
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 2/3
+}
+.related{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
